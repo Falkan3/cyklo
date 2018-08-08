@@ -1,0 +1,190 @@
+/* breadcrumbs */
+@media (max-width: 499px) {
+  /* line 3, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+  .breadcrumb {
+    text-align: center;
+  }
+  /* line 6, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+  .breadcrumb a {
+    display: block;
+  }
+}
+
+/* panel */
+/* line 14, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.panel {
+  margin: 20px 0;
+  background-color: #fff;
+  border-radius: 6px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #212121;
+}
+
+/* line 21, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.panel.no-style {
+  margin: 0;
+  background: none;
+  border: none;
+}
+
+/* line 26, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.panel .panel-body {
+  padding: 30px;
+}
+
+/* line 29, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.panel .auth-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* line 33, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.panel .form-group:last-child {
+  margin-bottom: 0;
+}
+
+/* line 36, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.panel .checkbox {
+  float: right;
+}
+
+/* line 38, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.panel .checkbox.left {
+  float: left;
+}
+
+/* line 40, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.panel .checkbox.left label {
+  padding: 0;
+}
+
+/* line 42, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.panel .checkbox.left label span {
+  margin-left: 0;
+}
+
+/* line 48, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.panel .form-horizontal .control-label {
+  width: 100%;
+  font-size: 75%;
+  text-align: center;
+}
+
+/* line 53, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.panel input {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 57, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.panel input[type="text"], .panel input[type="email"], .panel input[type="password"], .panel input[type="tel"], .panel input select, .panel input textarea {
+  padding: 12px 15px;
+  border: solid 2px #ddd;
+  border-radius: 6px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 65, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.panel input[type="text"]:focus, .panel input[type="email"]:focus, .panel input[type="password"]:focus, .panel input[type="tel"]:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #ff9c10;
+}
+
+/* line 71, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.panel select, .panel textarea {
+  padding: 12px 15px;
+  border: solid 2px #ddd;
+  border-radius: 6px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 78, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.panel select:focus, .panel textarea:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #ff9c10;
+}
+
+/* line 84, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.panel textarea {
+  max-width: 100%;
+}
+
+/* line 87, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.panel select option {
+  padding: 10px 15px;
+}
+
+/* line 90, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.panel select:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #ff9c10;
+}
+
+/* line 96, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.panel button[type="submit"] {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.5rem 0.75rem;
+  background-color: #fff;
+  background-image: none;
+  border: solid 3px #ff9c10;
+  border-radius: 0;
+  color: #212121;
+  text-shadow: none;
+}
+
+/* line 107, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.panel button[type="submit"].sliding_bg {
+  border: 3px solid #ff9c10;
+  box-shadow: inset 0 0 0 0 #ff9c10;
+}
+
+/* line 110, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.panel button[type="submit"].sliding_bg:hover {
+  box-shadow: inset 0 100px 0 0 #ff9c10;
+  color: #fff;
+}
+
+/* line 116, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.panel .btn {
+  white-space: normal;
+}
+
+/* line 119, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.panel .btn.btn-link {
+  display: block;
+  width: 100%;
+  border: none;
+}
+
+/* Form elements */
+/* line 128, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.has-error .form-control {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 131, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.has-error .form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 137, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.help-block {
+  font-size: 80%;
+}
+
+/* line 141, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/auth.scss */
+.form-control {
+  height: auto;
+}
+
+/*# sourceMappingURL=../auth.map */

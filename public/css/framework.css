@@ -1,0 +1,924 @@
+/* line 3, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+html {
+  overflow-y: scroll;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.6em;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  max-width: 1920px;
+  overflow-x: hidden;
+}
+
+/* line 17, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.6em;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  max-width: 1920px;
+  overflow-x: hidden;
+}
+
+/* line 29, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 31, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+/* line 36, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.center-container {
+  position: absolute;
+  left: 50%;
+}
+
+/* line 41, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+#hideAll {
+  display: none;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: #212121;
+  z-index: 99;
+  /* Higher than anything else in the document */
+  /*
+	background-image: url('../images/ajax-loader2.gif');
+	background-repeat: no-repeat;
+	background-position: center center;
+	*/
+}
+
+/* line 57, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+#hideAll .loader {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0 auto;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #ff9c10;
+}
+
+/* line 72, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.loader {
+  border: 12px solid #f3f3f3;
+  /* Light grey */
+  border-top: 12px solid #1b0a40;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+}
+
+/* line 80, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.loader.loading_ajax.global_ajax_loader {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  bottom: 6px;
+  left: 6px;
+  border: 4px solid #f3f3f3;
+  /* Light grey */
+  border-top: 4px solid #ff9c10;
+  z-index: 1051;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* line 104, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 108, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.center {
+  text-align: center;
+}
+
+/* line 112, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.right {
+  text-align: right;
+}
+
+/* line 116, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* line 120, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.capitalise {
+  text-transform: capitalize;
+}
+
+/* line 124, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.hidden {
+  display: none;
+}
+
+/* line 128, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.nospace {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 134, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.inline * {
+  display: inline-block;
+}
+
+/* line 136, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.inline *:last-child {
+  margin-right: 0;
+}
+
+/* line 141, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.pushright li {
+  margin-right: 20px;
+}
+
+/* line 143, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.pushright li:last-child {
+  margin-right: 0;
+}
+
+/* line 148, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.borderedbox {
+  border: 1px solid;
+}
+
+/* line 152, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.overlay {
+  position: relative;
+}
+
+/* line 154, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.overlay::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: -1;
+}
+
+/* line 166, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.bgded {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 172, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.circle {
+  border-radius: 50%;
+  background-clip: padding-box;
+}
+
+/* line 177, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.btn {
+  display: inline-block;
+  padding: 15px 25px 15px;
+  text-transform: uppercase;
+  border: 1px solid;
+}
+
+/* line 184, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.center-mrg {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 189, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.margin-vertical {
+  margin: 20px 0;
+}
+
+/* line 191, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.margin-vertical.medium {
+  margin: 40px 0;
+}
+
+/* line 196, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.margin-top-big {
+  margin-top: 130px;
+}
+
+/* line 200, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.padding-horizontal.medium {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* line 205, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.inline-block {
+  display: inline-block;
+  width: auto;
+}
+
+/* line 210, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.text-block {
+  display: block;
+}
+
+/* line 214, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.text-nowrap {
+  white-space: nowrap;
+}
+
+/* line 218, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.text-breakall {
+  word-break: break-all;
+}
+
+/* line 220, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.text-breakall p {
+  word-break: break-all;
+}
+
+/* line 225, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.no-float {
+  float: none !important;
+}
+
+/* line 229, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.no-padding {
+  padding: 0 !important;
+}
+
+/* line 233, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.no-margin {
+  margin: 0 !important;
+}
+
+/* line 237, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+div.flexbox {
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  /* line 242, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  div.flexbox {
+    display: block;
+  }
+}
+
+/* line 247, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.absolute-middle {
+  /* Internet Explorer 10 */
+  display: -ms-flexbox;
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
+  /* Firefox */
+  display: -moz-box;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  /* Safari, Opera, and Chrome */
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  /* W3C */
+  display: box;
+  box-pack: center;
+  box-align: center;
+}
+
+/* line 266, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.clear, .group {
+  display: block;
+}
+
+/* line 271, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.clear::before, .clear::after {
+  display: table;
+  content: "";
+}
+
+/* line 278, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.group::before, .group::after {
+  display: table;
+  content: "";
+}
+
+/* line 284, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.clear, .group {
+  clear: both;
+}
+
+/* line 286, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.clear::after, .group::after {
+  clear: both;
+}
+
+/* line 291, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 294, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+a:hover, a:active {
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 300, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.fl_left, .imgl {
+  float: left;
+}
+
+/* line 304, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.fl_right, .imgr {
+  float: right;
+}
+
+/* line 308, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+/* line 319, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.imgl {
+  margin: 0 15px 10px 0;
+  clear: left;
+}
+
+/* line 324, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.imgr {
+  margin: 0 0 10px 15px;
+  clear: right;
+}
+
+/* FULL HEIGHT SECTIONS */
+/* line 331, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+div.screen-height, section.screen-height {
+  min-height: 100vh;
+  height: calc(100%);
+  height: 100%;
+}
+
+/* line 338, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+div.tri-screen-height {
+  height: 75%;
+}
+
+/* line 341, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+div.duo-screen-height {
+  height: 50%;
+}
+
+/* line 344, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+div.pri-screen-height {
+  height: 25%;
+}
+
+/* line 347, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+div.flex-fit {
+  display: flex;
+  flex-flow: column;
+}
+
+/* line 351, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+div.darkened {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+}
+
+/* Custom */
+/* line 359, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.overlay::after {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+/* line 364, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+/* Generalise
+--------------------------------------------------------------------------------------------------------------- */
+/* line 374, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+h1, h2, h3, h4, h5, h6, .heading {
+  margin: 0 0 20px 0;
+  font-size: 22px;
+  line-height: normal;
+  font-weight: normal;
+}
+
+/* line 381, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+h1, h2, h3, h4, h5, h6, p {
+  line-height: 130%;
+}
+
+/* line 385, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+address {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 390, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+hr {
+  display: block;
+  width: 100%;
+  height: 1px;
+  border: solid;
+  border-width: 1px 0 0 0;
+}
+
+/* line 398, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.font-x1 {
+  font-size: 1.2rem;
+}
+
+/* line 402, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.font-x2 {
+  font-size: 1.8rem;
+}
+
+/* line 406, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.font-x3 {
+  font-size: 2.8rem;
+}
+
+/* line 410, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.wrapper {
+  display: block;
+  width: 100%;
+  margin: 0;
+  /*padding:20px 0*/
+  text-align: left;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+/* HTML 5 Overrides
+--------------------------------------------------------------------------------------------------------------- */
+/* line 423, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+address, article, aside, figcaption, figure, footer, header, main, nav, section {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* Spacing
+--------------------------------------------------------------------------------------------------------------- */
+/* line 432, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.btmspace-10 {
+  margin-bottom: 10px;
+}
+
+/* line 436, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.btmspace-15 {
+  margin-bottom: 15px;
+}
+
+/* line 440, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.btmspace-30 {
+  margin-bottom: 30px;
+}
+
+/* line 444, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.btmspace-50 {
+  margin-bottom: 50px;
+}
+
+/* line 448, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.btmspace-80 {
+  margin-bottom: 80px;
+}
+
+/* line 452, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.inspace-5 {
+  padding: 5px;
+}
+
+/* line 456, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.inspace-10 {
+  padding: 10px;
+}
+
+/* line 460, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.inspace-15 {
+  padding: 15px;
+}
+
+/* line 464, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.inspace-30 {
+  padding: 30px;
+}
+
+/* line 468, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.inspace-50 {
+  padding: 50px;
+}
+
+/* line 472, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.inspace-80 {
+  padding: 80px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+/* line 478, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+body {
+  padding-top: 50px;
+}
+
+/* line 482, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.noscript-warning {
+  padding: 20px 10%;
+  background-color: #d02323;
+  background-image: url(../images/els/bg-warning.png);
+}
+
+/* line 486, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.noscript-warning p {
+  margin: 0;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 140%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* line 496, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+#backtotop {
+  z-index: 2;
+  display: inline-block;
+  position: fixed;
+  visibility: hidden;
+  bottom: 20px;
+  right: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 16px;
+  text-align: center;
+  opacity: 0.2;
+  text-decoration: none;
+  outline: none;
+  transition: all .2s ease-in-out 0s;
+  color: white;
+  background-color: #ff9c10;
+}
+
+/* line 514, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+#backtotop i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: inherit;
+}
+
+/* line 520, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+#backtotop.visible {
+  visibility: visible;
+  opacity: 0.5;
+}
+
+/* line 523, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+#backtotop.visible:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* 5 Columns */
+/* line 532, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.col-xs-15, .col-sm-15, .col-md-15, .col-lg-15 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* line 539, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.col-xs-15 {
+  width: 20%;
+  float: left;
+}
+
+/* line 544, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.col-xs-offset-20, .col-xs-offset-80 {
+  margin-left: 20%;
+}
+
+@media (min-width: 768px) {
+  /* line 549, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  .col-sm-15 {
+    width: 20%;
+    float: left;
+  }
+  /* line 553, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  .col-sm-offset-20 {
+    margin-left: 20%;
+  }
+  /* line 556, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  .col-sm-offset-80 {
+    margin-left: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 562, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  .col-md-15 {
+    width: 20%;
+    float: left;
+  }
+  /* line 566, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  .col-md-offset-20 {
+    margin-left: 20%;
+  }
+  /* line 569, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  .col-md-offset-80 {
+    margin-left: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 575, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  .col-lg-15 {
+    width: 20%;
+    float: left;
+  }
+  /* line 579, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  .col-lg-offset-20 {
+    margin-left: 20%;
+  }
+  /* line 582, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  .col-lg-offset-80 {
+    margin-left: 80%;
+  }
+}
+
+/* FLIPPER ///////////////////////////////////////////////// */
+/* entire container, keeps perspective */
+/* line 589, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.flip-container {
+  perspective: 1000px;
+  /* flip the pane when hovered */
+  /* .flip-container:hover .flipper, */
+  width: 100%;
+  height: auto;
+}
+
+/* line 593, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.flip-container.hover .flipper {
+  transform: rotateX(180deg);
+  transition-delay: 0s;
+}
+
+/* line 601, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.flipper {
+  /* flip speed goes here */
+  transition: 0.6s;
+  transition-delay: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  height: 100%;
+  min-width: 100px;
+  min-height: 100px;
+  /* hide back of pane during swap */
+  /* front pane, placed above back */
+  /* back, initially hidden pane */
+}
+
+/* line 602, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.flipper .front, .flipper .back {
+  width: 100%;
+  height: auto;
+}
+
+/* line 615, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.flipper .front, .flipper .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+/* line 623, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.flipper .front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateX(0deg);
+}
+
+/* line 629, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.flipper .back {
+  transform: rotateX(180deg);
+}
+
+/* FLIPPER ///////////////////////////////////////////////// */
+/* line 635, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.relative {
+  position: relative;
+}
+
+/* ALIGNER -------------------------------------------------- */
+/* line 641, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+div.aligner.all {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+/* line 656, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.aligner-item--fixed.all {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  flex: none;
+}
+
+/* line 662, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.aligner-item.all {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+/* line 668, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.flex-center.all {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  resize: vertical;
+}
+
+/* line 676, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.flex-center.all.vertical-center {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* line 680, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.flex-center.all.absolute-center {
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 684, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.flex-center.all.flex-row {
+  flex-direction: row;
+}
+
+/* line 687, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+.flex-center.all p {
+  margin: 0;
+  padding: 20px;
+}
+
+/* /ALIGNER -------------------------------------------------- */
+@media (min-width: 1600px) {
+  /* line 696, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  .container {
+    width: 1400px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 702, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  .margin-vertical.medium.mobile {
+    margin: 30px 0;
+  }
+  /* line 705, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  .margin-on-mobile {
+    margin: 15px 0 !important;
+  }
+  /* line 708, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  .absolute-middle {
+    /* Internet Explorer 10 */
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    /* Firefox */
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    /* Safari, Opera, and Chrome */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    /* W3C */
+    display: box;
+    box-pack: center;
+    box-align: center;
+  }
+  /* line 726, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  div.aligner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+  /* line 740, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  .aligner-item--fixed {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+    flex: none;
+  }
+  /* line 745, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  .aligner-item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+  }
+  /* line 750, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  .flex-center {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    resize: vertical;
+  }
+  /* line 758, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  .flex-center.vertical-center {
+    align-items: center;
+    justify-content: flex-start;
+  }
+  /* line 762, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  .flex-center.absolute-center {
+    align-items: center;
+    justify-content: center;
+  }
+  /* line 766, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  .flex-center.flex-row {
+    flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+  }
+  /* line 771, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  .flex-center p {
+    margin: 0;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 779, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  .no-margin-mobile {
+    margin: 0 !important;
+  }
+  /* line 782, C:/Users/Adam/Documents/Repos/Cyklo/public/css/scss/framework.scss */
+  .no-padding-mobile, .padding-horizontal.no-padding-mobile, .padding-vertical.no-padding-mobile {
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=../framework.map */

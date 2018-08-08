@@ -1,0 +1,84 @@
+/* Form */
+
+form {
+  position: relative;
+}
+
+a.read-more-click {
+  text-decoration: none;
+  color: #b7b7b7;
+  font-size: 100%;
+}
+
+div.read-more {
+  display: none;
+  position: absolute;
+  max-height: 200px;
+  overflow: auto;
+  bottom: 0;
+  right: 0;
+  color: #31302B;
+  padding: 24px 24px 12px 24px;
+  z-index: 999;
+  border: 3px solid #31302B;
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px #ccc;
+  margin-bottom: 10px;
+  background: #fff;
+  /*background: url(https://static.fdtc.edu/_img/icon/forms/close.png) #fff no-repeat top right 24px / 24px 24px;*/
+  cursor: pointer;
+  p {
+    font-size: 100%;
+    line-height: 110%;
+    color: #212121;
+  }
+}
+
+input {
+  &[type="checkbox"] {
+    display: none;
+    + label {
+      display: inline;
+      span {
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        margin: -2px 15px 0 22px;
+        vertical-align: middle;
+        background: url(../images/els/check_radio_sheet_w.png) left -20px no-repeat;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &:checked + label span {
+      background: url(../images/els/check_radio_sheet_w.png) -22px -20px no-repeat;
+    }
+  }
+  &[type="file"] {
+    width: 100%;
+    color: #212121;
+  }
+}
+
+.agreements > div {
+  position: relative;
+}
+
+span.errormsg {
+  position: absolute;
+  width: auto;
+  top: -4px;
+  bottom: auto;
+  left: 0;
+  right: auto;
+  background-color: #e00000;
+  border-radius: 8px;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 80%;
+  opacity: .9;
+  z-index: 1;
+}
+
+/* ----------------------------- /Form ----------------------------- */

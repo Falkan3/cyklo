@@ -1,0 +1,143 @@
+/* breadcrumbs */
+
+.breadcrumb {
+	@media (max-width: 499px) {
+		text-align: center;
+		a {
+			display: block;
+		}
+	}
+}
+
+/* panel */
+
+.panel {
+	margin: 20px 0;
+	background-color: #fff;
+	border-radius: 6px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: #212121;
+	&.no-style {
+		margin: 0;
+		background: none;
+		border: none;
+	}
+	.panel-body {
+		padding: 30px;
+	}
+	.auth-container {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+	.form-group:last-child {
+		margin-bottom: 0;
+	}
+	.checkbox {
+		float: right;
+		&.left {
+			float: left;
+			label {
+				padding: 0;
+				span {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+	.form-horizontal .control-label {
+		width: 100%;
+		font-size: 75%;
+		text-align: center;
+	}
+	input {
+		margin-left: auto;
+		margin-right: auto;
+
+		&[type="text"], &[type="email"], &[type="password"], &[type="tel"], select, textarea {
+			padding: 12px 15px;
+			border: solid 2px #ddd;
+			border-radius: 6px;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+
+		&[type="text"]:focus, &[type="email"]:focus, &[type="password"]:focus, &[type="tel"]:focus {
+			-webkit-box-shadow: none;
+			box-shadow: none;
+			border-color: #ff9c10;
+		}
+	}
+	select, textarea {
+		padding: 12px 15px;
+		border: solid 2px #ddd;
+		border-radius: 6px;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+
+		&:focus {
+			-webkit-box-shadow: none;
+			box-shadow: none;
+			border-color: #ff9c10;
+		}
+	}
+	textarea {
+		max-width: 100%;
+	}
+	select option {
+		padding: 10px 15px;
+	}
+	select:focus {
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		border-color: #ff9c10;
+	}
+
+	button[type="submit"] {
+		display: block;
+		width: 100%;
+		margin: 1rem 0;
+		padding: 0.5rem 0.75rem;
+		background-color: #fff;
+		background-image: none;
+		border: solid 3px #ff9c10;
+		border-radius: 0;
+		color: #212121;
+		text-shadow: none;
+		&.sliding_bg {
+			border: 3px solid #ff9c10;
+			box-shadow: inset 0 0 0 0 #ff9c10;
+			&:hover {
+				box-shadow: inset 0 100px 0 0 #ff9c10;
+				color: #fff;
+			}
+		}
+	}
+	.btn {
+		white-space: normal;
+	}
+	.btn.btn-link {
+		display: block;
+		width: 100%;
+		border: none;
+	}
+}
+
+/* Form elements */
+
+.has-error .form-control {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	&:focus {
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+}
+
+.help-block {
+	font-size: 80%;
+}
+
+.form-control {
+	height: auto;
+}
